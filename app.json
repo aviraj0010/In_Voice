@@ -9,7 +9,8 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#ffffff",
+      "plugins": ["@react-native-firebase/app", "@react-native-firebase/auth"]
     },
     "assetBundlePatterns": [
       "**/*"
@@ -21,10 +22,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.avirajsinh.invoice_app"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4721c55f-7277-4964-9a4c-913006aac2a4"
+      }
     }
   }
 }
